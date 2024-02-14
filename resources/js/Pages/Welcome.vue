@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Head, Link } from '@inertiajs/vue3';
+import { Head, Link } from "@inertiajs/vue3";
 
 defineProps<{
     canLogin?: boolean;
@@ -40,7 +40,7 @@ defineProps<{
         </div>
 
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
-            <div class="flex justify-center">
+            <div class="flex items-center justify-center gap-8">
                 <svg
                     viewBox="0 0 62 65"
                     fill="none"
@@ -52,6 +52,33 @@ defineProps<{
                         fill="#FF2D20"
                     />
                 </svg>
+
+                <div>
+                    <svg
+                        class="h-8 fill-slate-50"
+                        version="1.1"
+                        id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 460.775 460.775"
+                        xml:space="preserve"
+                    >
+                        <path
+                            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+	c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+	c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+	c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+	l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+	c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"
+                        />
+                    </svg>
+                </div>
+
+                <img
+                    class="max-w-60 object-fill"
+                    src="/logo/primevue.png"
+                    alt="PrimeVue Logo"
+                />
             </div>
 
             <div class="mt-16">
@@ -79,12 +106,20 @@ defineProps<{
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
+                            <h2
+                                class="mt-6 text-xl font-semibold text-gray-900 dark:text-white"
+                            >
+                                Documentation
+                            </h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel has wonderful documentation covering every aspect of the framework. Whether you
-                                are a newcomer or have prior experience with Laravel, we recommend reading our
-                                documentation from beginning to end.
+                            <p
+                                class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+                            >
+                                Laravel has wonderful documentation covering
+                                every aspect of the framework. Whether you are a
+                                newcomer or have prior experience with Laravel,
+                                we recommend reading our documentation from
+                                beginning to end.
                             </p>
                         </div>
 
@@ -125,12 +160,19 @@ defineProps<{
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laracasts</h2>
+                            <h2
+                                class="mt-6 text-xl font-semibold text-gray-900 dark:text-white"
+                            >
+                                Laracasts
+                            </h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
-                                development. Check them out, see for yourself, and massively level up your development
-                                skills in the process.
+                            <p
+                                class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+                            >
+                                Laracasts offers thousands of video tutorials on
+                                Laravel, PHP, and JavaScript development. Check
+                                them out, see for yourself, and massively level
+                                up your development skills in the process.
                             </p>
                         </div>
 
@@ -172,12 +214,19 @@ defineProps<{
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
+                            <h2
+                                class="mt-6 text-xl font-semibold text-gray-900 dark:text-white"
+                            >
+                                Laravel News
+                            </h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel News is a community driven portal and newsletter aggregating all of the latest
-                                and most important news in the Laravel ecosystem, including new package releases and
-                                tutorials.
+                            <p
+                                class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+                            >
+                                Laravel News is a community driven portal and
+                                newsletter aggregating all of the latest and
+                                most important news in the Laravel ecosystem,
+                                including new package releases and tutorials.
                             </p>
                         </div>
 
@@ -218,10 +267,17 @@ defineProps<{
                                 </svg>
                             </div>
 
-                            <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</h2>
+                            <h2
+                                class="mt-6 text-xl font-semibold text-gray-900 dark:text-white"
+                            >
+                                Vibrant Ecosystem
+                            </h2>
 
-                            <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                Laravel's robust library of first-party tools and libraries, such as
+                            <p
+                                class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed"
+                            >
+                                Laravel's robust library of first-party tools
+                                and libraries, such as
                                 <a
                                     href="https://forge.laravel.com"
                                     class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
@@ -242,8 +298,9 @@ defineProps<{
                                     class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                     >Envoyer</a
                                 >
-                                help you take your projects to the next level. Pair them with powerful open source
-                                libraries like
+                                help you take your projects to the next level.
+                                Pair them with powerful open source libraries
+                                like
                                 <a
                                     href="https://laravel.com/docs/billing"
                                     class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
@@ -280,10 +337,14 @@ defineProps<{
                 </div>
             </div>
 
-            <div class="flex justify-center mt-16 px-6 sm:items-center sm:justify-between">
+            <div
+                class="flex justify-center mt-16 px-6 sm:items-center sm:justify-between"
+            >
                 <div class="text-center text-sm sm:text-start">&nbsp;</div>
 
-                <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0">
+                <div
+                    class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0"
+                >
                     Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})
                 </div>
             </div>
