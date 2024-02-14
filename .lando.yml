@@ -1,0 +1,42 @@
+name: laravel
+recipe: laravel
+config:
+  webroot: ./public
+  php: 8.2
+proxy:
+  appserver:
+    - laravel.localhost
+  mailhog:
+    - mail.laravel.localhost
+services:
+  appserver:
+    scanner: false
+  database:
+    type: mysql
+    portforward: 33066
+    creds:
+      user: username
+      password: password
+      database: laravel
+  node:
+    type: node:18
+    scanner: false
+    ports:
+      - "5173:5173"
+    build:
+      - npm install && npm install -G npm@latest
+  mailhog:
+    type: mailhog
+    scanner: false
+    portforward: true
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  dev:
+    service: node
+    cmd: npm run dev
+  build:
+    service: node
+    cmd: npm run build
