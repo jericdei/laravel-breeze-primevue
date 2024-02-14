@@ -11,9 +11,9 @@ proxy:
 services:
   appserver:
     scanner: false
+    ssl: false
   database:
     type: mysql
-    portforward: 33066
     creds:
       user: username
       password: password
@@ -21,10 +21,9 @@ services:
   node:
     type: node:18
     scanner: false
+    ssl: false
     ports:
       - "5173:5173"
-    build:
-      - npm install && npm install -G npm@latest
   mailhog:
     type: mailhog
     scanner: false
@@ -32,11 +31,11 @@ services:
 tooling:
   node:
     service: node
-  npm:
+  yarn:
     service: node
   dev:
     service: node
-    cmd: npm run dev
+    cmd: yarn dev
   build:
     service: node
-    cmd: npm run build
+    cmd: yarn build
