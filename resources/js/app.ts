@@ -5,7 +5,7 @@ import "primeicons/primeicons.css";
 import { createApp, h, DefineComponent, watch } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
-import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
+import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 
 import PrimeVue from "primevue/config";
 import ConfirmationService from "primevue/confirmationservice";
